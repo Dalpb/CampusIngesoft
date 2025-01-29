@@ -1,0 +1,135 @@
+.vfrc-widget--launcher {
+    position: fixed;
+    bottom: 5px; /* Ajusta la posición en la parte inferior */
+    right: 5px; /* Ajusta la posición a la derecha */
+}
+
+.vfrc-launcher {
+    width: 40px; /* Reduce el tamaño del botón */
+    height: 40px;
+}  
+
+.vfrc-launcher img {
+    width: 20px; /* Ajusta el tamaño del ícono SVG */
+    height: 20px;
+}
+
+.c-kfyIxT {
+    position: relative; /* Asegura que el pseudo-elemento se posicione correctamente */
+    visibility: hidden; /* Asegura que el contenido original esté oculto */
+}
+
+.c-kfyIxT::before {
+    content: ""; /* Puedes dejar este contenido vacío si solo quieres ocultar el texto original */
+    visibility: hidden; /* Asegura que el contenido original esté oculto */
+}
+
+.c-kfyIxT::after {
+    content: "FII-UXP";
+    position: absolute; /* Posiciona el nuevo contenido en relación al contenedor */
+    visibility: visible; /* Asegura que el contenido original esté oculto */
+    top: 0; /* Ajusta la posición según sea necesario */
+    left: 0; /* Ajusta la posición según sea necesario */
+    font-family: var(--fonts-default);
+    font-size: 17px;
+    font-weight: var(--fontWeights-2);
+    line-height: var(--lineHeights-2);
+    color: rgba(255, 255, 255, 0.95);
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+}
+
+.c-fikloo {
+    width: 100%; /* El ancho será el 90% del ancho de la pantalla */
+}
+
+@media only screen and (min-width: 768px) {
+    .c-fikloo {
+        width: 550px;
+    }
+}
+
+
+.c-kCDKCe {
+    height: var(--sizes-sm);
+    border: 1px solid var(--colors-fadedPrimary);
+    color: #ffffff;
+    background-color: #3B69FA;
+    box-shadow: 0 1px 2px var(--shadows-shadow2);
+    transition: border-color 150ms;
+}
+.vfrc-footer--watermark {
+    visibility: hidden; /* Oculta el contenido original */
+}
+
+.vfrc-footer--watermark::after {
+    content: "";
+    visibility: visible; /* Asegura que el nuevo contenido sea visible */
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    color: inherit;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    display: inline-block; /* Mantiene el contenido como un bloque en línea */
+}
+
+.c-iCDrnV {
+    background-color: #363661;
+}
+
+.c-dzcdPv.vfrc-button.c-jjMiVY.vfrc-button--primary.c-bXTvXv.c-bXTvXv-lckiv-type-info {
+    position: relative;
+    color: transparent; /* Oculta el texto original */
+}
+
+.c-dzcdPv.vfrc-button.c-jjMiVY.vfrc-button--primary.c-bXTvXv.c-bXTvXv-lckiv-type-info::after {
+    content: 'Iniciar nuevo chat'; /* Texto nuevo */
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #ffffff; /* Estilo del nuevo texto */
+    text-align: center;
+}
+
+
+/* Ocultar el contenido original del botón */
+.vfrc-chat--session-time.c-bbTBUn{
+    color: transparent; /* Oculta el texto del botón original */
+    position: relative;
+}
+
+/* Agregar nuevo texto "Hoy" con ::after */
+.vfrc-chat--session-time.c-bbTBUn::after {
+    content: 'Hoy'; /* Nuevo texto que se mostrará */
+    color: darkgrey; /* Color del nuevo texto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Elimina la capacidad de interactuar con el pseudo-elemento */
+}
+
+/* Ocultar el texto del placeholder original */
+.c-fYYkXN::placeholder {
+    color: transparent; /* Oculta el texto del placeholder */
+}
+.vfrc-chat--status.c-iVkGGQ{
+    color: transparent; /* Oculta el texto original */
+}
+
+.vfrc-chat--status.c-iVkGGQ::after {
+    content: 'El chat ha finalizado'; /* Texto nuevo */
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: darkgrey; /* Color del nuevo texto */
+    text-align: center;
+}
+.salesCategoria {
+     padding: 10px;
+     
+}
